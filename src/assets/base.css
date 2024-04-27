@@ -1,0 +1,450 @@
+                                                                                                     
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Lobster&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    border: none;
+    outline: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+:focus{
+    outline: none;
+}
+    
+:root{
+    --clr-primary: #f7f0e6;
+    --clr-secondary:#4d8de5; 
+    --clr-accent: #7fd220;
+    --clr-dark: #0e2449;
+    --clr-medium: #0e24493c;
+    --clr-gray: #3f4857;
+    --clr-light: #fdfdfd;
+}                           
+     
+
+body{
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    font-family: 'Anuphan', sans-serif;
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.logo{
+    font-family: 'Lobster', 'cursive';
+}
+
+.logo > p{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--clr-light);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover{
+    scale: 1.048;
+    border: 1px thin #333;
+}
+
+.btn a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-register{
+    background-color: var(--clr-accent);
+}
+
+.btn-login{
+    background-color: var(--clr-secondary);
+}
+
+form{
+    padding-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    gap: 5px;
+}
+
+form label{
+    color: var(--clr-gray);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+form input, form textarea{
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid var(--clr-medium);
+}
+
+.nav-item{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.nav-item:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.alert{
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-left:20px ;
+    color: var(--clr-light);
+    background-color: #41c1c6;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    display: none;
+}                                                                                                     
+
+header{
+    background-color: var(--clr-secondary);
+    color: var(--clr-text);
+    height: 10vh;
+}
+
+header nav, ul{
+    height: 100%;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{ 
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+header .logo .camera-icon{
+    margin-right: 10px;
+}
+
+
+header .secondary-navs{
+    margin-right: 50px;
+    display: flex;
+    gap: 15px;
+}
+                                                                                                      
+main{
+    color: var(--clr-dark);
+    height: 90vh;
+}
+
+.home-img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    padding-top: 90px;
+    width: 80vw;
+    height: 70%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+}
+.photo-card{
+    border: 1px solid var(--clr-medium);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 9px 7px -3px rgba(14,36,73,0.1);
+}
+
+.photo-card-home{
+    height: 100%;
+}
+
+.photo-card-solid{
+    background-color: var(--clr-light);
+}
+
+.photo-card .logo{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.photo-card hr{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.photo-card-content{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.photo-card-btns{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.photo-container{
+    margin: 0 auto;
+    width: 30%;
+    height: 80vh;
+}
+
+.photo-container-login,.photo-container-post{
+    padding-top: 50px;
+}
+
+.photo-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--clr-gray);
+    margin: 20px 0;
+}
+  
+.explore-page{
+    display: flex;
+    gap: 40px;
+}
+.explore-container{
+    width: 40%;
+    margin-left: 15%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.explore-header{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.explore-footer{
+    padding-left: 10px;
+}
+
+.explore-username{
+    font-weight: bold;
+}
+
+.explore-desc{
+    color: var(--clr-gray);
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.explore-stats{
+    display: flex;
+    justify-content: space-between;
+}
+.explore-card{
+    margin: 20px 0;
+    background-color: var(--clr-light);
+    padding-bottom: 20px;
+}
+
+.explore-likes{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.explore-date{
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.explore-btn{
+    width: 20vw;
+    height: 7vh;
+    margin-top: 45px;
+}
+
+.explore-btn a{
+    text-align: center;
+}
+  
+.profile-photo{
+    width: 10%;
+    margin-left: 20px;
+
+}
+
+.profile-header{
+    width: 90vw;
+    height: 25vh;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.profile-about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--clr-gray);
+}
+.profile-about .profile-name{
+    font-weight: bold;
+}
+
+.profile-stats{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.profile-stats .posts-and-followers{
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stats-count{
+    font-size: 30px;
+}
+
+.stats-label{
+    color: var(--clr-gray);
+    opacity: 0.6;
+}
+
+.uploaded-img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profile-uploads{
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: grid;
+    gap: 55px;
+    grid-template-columns: repeat(3, 30%); 
+}
+
+.profile-uploads > .uploaded-img-container{
+    height: 40vh;
+}
+
+
+.like-post{
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+
+.like-post-btn:hover{
+    color: #d22020;
+    cursor: pointer;
+}
+
+.liked{
+    color: #d22020;
+}
+
+.logged-in-icon{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 200px;
+}
+
+.logged-in-text{
+    color: var(--clr-gray);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logout-link{
+    color: var(--clr-secondary);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.logout-link:hover{
+    color: var(--clr-accent)
+}
